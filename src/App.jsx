@@ -3,7 +3,7 @@ import {CssBaseline} from '@mui/material'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProfilePage from './view/ProfilePage'
 
-export default function () {
+export default function App() {
   return (
     <>
     <CssBaseline />
