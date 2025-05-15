@@ -26,7 +26,7 @@ export default function ProfilePage() {
                     </Toolbar>
                 </AppBar>
             </Box>
-            <Box sx={{ justifyContent: 'space-between', display: 'flex', mt: 8, mx: '10%',flexWrap: 'wrap'}}>
+            <Box sx={{ justifyContent: 'space-between', display: 'flex', mt: 8, mx: '10%'}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 14 }}>
                     <Typography sx={{ fontSize: '80px', color: 'white', fontFamily: "Arial Narrow", fontWeight: 'bold', lineHeight: '1' }}>
                         HI, I AM <br />
@@ -53,7 +53,8 @@ export default function ProfilePage() {
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mx: '10%', mt: 8, color: 'white' ,flexWrap: 'wrap'}}>
+            <Box>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mx: '10%', mt: 8, color: 'white' }}>
                 <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>ABOUT ME</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5}}>
                     <Typography sx={{ fontSize: '28px', opacity: 0.9 }}>
@@ -79,13 +80,15 @@ export default function ProfilePage() {
                     </Box >
                 </Box>
             </Box>
-            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6, mx: 'auto'}}>
-                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px',display:'block',margin: 0}}></Avatar>
+            </Box>
+            <Box >
+                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px',justifyContent: 'center', display: 'flex', mt: 6, mx: 'auto'}}></Avatar>
             </Box>
             <Box sx={{ mt: 6 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 8, color: 'white', mx: '10%',flexWrap: 'wrap'}}>
+            <Box>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 8, color: 'white', mx: '10%'}}>
                 <Typography sx={{ fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY CAPABILITIES</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5 ,width: '45%'}}>
                     <Typography sx={{ fontSize: '16px', opacity: 0.6 }}>
@@ -224,10 +227,12 @@ export default function ProfilePage() {
                     </Box>
                 </Box>
             </Box>
+            </Box>
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex',justifyContent: 'space-between', mt: 8 ,color:'white',mx:'10%',flexWrap: 'wrap'}}>
+        <Box>
+            <Box sx={{ display: 'flex',justifyContent: 'space-between', mt: 8 ,color:'white',mx:'10%'}}>
                 <Typography sx={{fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY EXPERIENCE</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5,width:'44%'}}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
@@ -253,11 +258,12 @@ export default function ProfilePage() {
 
                 </Box>
             </Box>
+        </Box>
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mt: 8 ,mx:'10%',color:'white',flexWrap: 'wrap'}}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mt: 8 ,mx:'10%',color:'white'}}>
 
                 <Box >
                     <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>
