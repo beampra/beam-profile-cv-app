@@ -26,7 +26,7 @@ export default function ProfilePage() {
                     </Toolbar>
                 </AppBar>
             </Box>
-            <Box sx={{ justifyContent: 'space-between', display: 'flex', mt: 8, mx: '10%'}}>
+            <Box sx={{ justifyContent: 'space-between', display: 'flex', mt: 8, mx: '10%',flexWrap: 'wrap'}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 14 }}>
                     <Typography sx={{ fontSize: '80px', color: 'white', fontFamily: "Arial Narrow", fontWeight: 'bold', lineHeight: '1' }}>
                         HI, I AM <br />
@@ -79,8 +79,8 @@ export default function ProfilePage() {
                     </Box >
                 </Box>
             </Box>
-            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6}}>
-                <Avatar alt='see' src={See} variant='rounded' sx={{ width: 1400, height: 700, borderRadius: '20px',display:'block',margin: 0}}></Avatar>
+            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6, mx: 'auto'}}>
+                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px',display:'block',margin: 0}}></Avatar>
             </Box>
             <Box sx={{ mt: 6 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
@@ -257,7 +257,7 @@ export default function ProfilePage() {
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mt: 8 ,mx:'10%',color:'white'}}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mt: 8 ,mx:'10%',color:'white',flexWrap: 'wrap'}}>
 
                 <Box >
                     <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>
