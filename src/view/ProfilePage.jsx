@@ -53,9 +53,9 @@ export default function ProfilePage() {
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mx: '10%', mt: 8, color: 'white' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mx: '10%', mt: 8, color: 'white' ,flexWrap: 'wrap'}}>
                 <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>ABOUT ME</Typography>
-                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', mt: 2.5}}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5}}>
                     <Typography sx={{ fontSize: '28px', opacity: 0.9 }}>
                         ผมเป็นนักพัฒนาเว็ปไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ใน <br />
                         นครปฐม กำลังมองหาโอกาศที่น่าตื่นเต้นในการทำงาน <br />
@@ -79,13 +79,13 @@ export default function ProfilePage() {
                     </Box >
                 </Box>
             </Box>
-            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6 }}>
-                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px' }}></Avatar>
+            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6}}>
+                <Avatar alt='see' src={See} variant='rounded' sx={{ width: 1400, height: 700, borderRadius: '20px',display:'block',margin: 0}}></Avatar>
             </Box>
             <Box sx={{ mt: 6 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 8, color: 'white', mx: '10%'}}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 8, color: 'white', mx: '10%',flexWrap: 'wrap'}}>
                 <Typography sx={{ fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY CAPABILITIES</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5 ,width: '45%'}}>
                     <Typography sx={{ fontSize: '16px', opacity: 0.6 }}>
@@ -227,7 +227,7 @@ export default function ProfilePage() {
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box sx={{ display: 'flex',justifyContent: 'space-between', mt: 8 ,color:'white',mx:'10%'}}>
+            <Box sx={{ display: 'flex',justifyContent: 'space-between', mt: 8 ,color:'white',mx:'10%',flexWrap: 'wrap'}}>
                 <Typography sx={{fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY EXPERIENCE</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5,width:'44%'}}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between'}}>
@@ -259,7 +259,7 @@ export default function ProfilePage() {
 
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', mt: 8 ,mx:'10%',color:'white'}}>
 
-                <Box display={{ display: 'flex', flexDirection: 'column' }}>
+                <Box >
                     <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>
                         LET's CONNECT
                     </Typography>
