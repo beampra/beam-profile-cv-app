@@ -81,7 +81,7 @@ export default function ProfilePage() {
                 </Box>
             </Box>
             </Box>
-            <Box >
+            <Box sx={{width: '100%'}}>
                 <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px',justifyContent: 'center', display: 'flex', mt: 6, mx: 'auto'}}></Avatar>
             </Box>
             <Box sx={{ mt: 6 }}>
