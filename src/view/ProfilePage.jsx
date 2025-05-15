@@ -8,8 +8,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function ProfilePage() {
     return (
         <>
+        <Box sx={{width:'100vh',height:'100vh'}}>
             <Box>
-                <AppBar position="static" sx={{ backgroundColor: 'black' }}>
+                <AppBar position="static" sx={{ backgroundColor: 'black'}}>
                     <Toolbar>
                         <Typography sx={{ ml: 6, fontSize: '22px', mr: 'auto', fontFamily: "Arial Narrow", fontWeight: 'bold', opacity: 0.8, letterSpacing: '-0.7px', }}>
                             NONTAKORN PRAVATVITHISUK
@@ -53,10 +54,11 @@ export default function ProfilePage() {
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mx: '10%', mt: 8, color: 'white' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between',flexDirection: 'row', mx: '10%', mt: 8, color: 'white' }}>
+                <Box>
                 <Typography sx={{ fontSize: '70px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>ABOUT ME</Typography>
-                <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5}}>
+                </Box>
+                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', mt: 2.5}}>
                     <Typography sx={{ fontSize: '28px', opacity: 0.9 }}>
                         ผมเป็นนักพัฒนาเว็ปไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ใน <br />
                         นครปฐม กำลังมองหาโอกาศที่น่าตื่นเต้นในการทำงาน <br />
@@ -79,15 +81,14 @@ export default function ProfilePage() {
                         </Avatar>
                     </Box >
                 </Box>
-            </Box>
-            </Box>
-            <Box sx={{width: '100%'}}>
-                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px',justifyContent: 'center', display: 'flex', mt: 6, mx: 'auto'}}></Avatar>
+                </Box>
+            
+            <Box sx={{ justifyContent: 'center', display: 'flex', mt: 6 }}>
+                <Avatar alt='see' src={See} variant='rounded' sx={{ width: '90%', height: 700, borderRadius: '20px' }}></Avatar>
             </Box>
             <Box sx={{ mt: 6 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-            <Box>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 8, color: 'white', mx: '10%'}}>
                 <Typography sx={{ fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY CAPABILITIES</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5 ,width: '45%'}}>
@@ -227,11 +228,9 @@ export default function ProfilePage() {
                     </Box>
                 </Box>
             </Box>
-            </Box>
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
-        <Box>
             <Box sx={{ display: 'flex',justifyContent: 'space-between', mt: 8 ,color:'white',mx:'10%'}}>
                 <Typography sx={{fontSize: '60px', fontWeight: 'bold', fontFamily: 'Arial Narrow' }}>MY EXPERIENCE</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', mt: 2.5,width:'44%'}}>
@@ -258,7 +257,6 @@ export default function ProfilePage() {
 
                 </Box>
             </Box>
-        </Box>
             <Box sx={{ mt: 10 }}>
                 <hr style={{ borderColor: 'rgb(77, 76, 76)', marginRight: '4%' }} />
             </Box>
@@ -297,6 +295,7 @@ export default function ProfilePage() {
                 </Box>
             </Box>
             <Box sx={{ height: '100px' }} />
+            </Box>
         </>
     )
 }
