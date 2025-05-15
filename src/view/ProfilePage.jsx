@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function ProfilePage() {
     return (
         <>
-        <Box sx={{width:'100vh',height:'100vh'}}>
+        <Box>
             <Box>
                 <AppBar position="static" sx={{ backgroundColor: 'black'}}>
                     <Toolbar>
